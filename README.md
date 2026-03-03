@@ -68,3 +68,8 @@ Follow these steps to run the project locally:
 
 ```bash
 git clone:- https://github.com/Rahul0356/React-Assignment-02
+
+👨‍💻 Author
+
+Developed by: Rahul Kumar
+
