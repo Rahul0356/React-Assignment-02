@@ -6,7 +6,7 @@ import BrowserBooksPage from './pages/BrowserBooksPage';
 import BookDetailsPage from './pages/BookDetailsPage';
 import AddBookPage from './pages/AddBookPage';
 import { store } from './store/store';
-import Navbar from './compenents/Navbar';
+import Navbar from './components/Navbar';
 
 // Layout wrapper that includes Navbar - used for all normal pages
 const Layout = ({ children }) => (
