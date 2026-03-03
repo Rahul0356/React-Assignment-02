@@ -1,12 +1,13 @@
-import React from 'react'
-import { Provider } from 'react-redux';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import HomePage from './pages/HomePage';
-import BrowserBooksPage from './pages/BrowserBooksPage';
-import BookDetailsPage from './pages/BookDetailsPage';
-import AddBookPage from './pages/AddBookPage';
-import { store } from './store/store';
-import Navbar from './components/Navbar';
+import React from "react";
+import { Provider } from "react-redux";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import BrowseBooksPage from "./pages/BrowseBooksPage";
+import BookDetailsPage from "./pages/BookDetailsPage";
+import AddBookPage from "./pages/AddBookPage";
+import { store } from "./store/store";
+import Navbar from "./components/Navbar";
+import NotFoundPage from "./pages/NotFoundPage";
 
 // Layout wrapper that includes Navbar - used for all normal pages
 const Layout = ({ children }) => (
@@ -17,7 +18,6 @@ const Layout = ({ children }) => (
 );
 
 const App = () => {
-  
   return (
     // Provide Redux store to entire app
     <Provider store={store}>
@@ -38,7 +38,7 @@ const App = () => {
             path="/books"
             element={
               <Layout>
-                <BrowserBooksPage />
+                <BrowseBooksPage />
               </Layout>
             }
           />
@@ -79,6 +79,6 @@ const App = () => {
       </BrowserRouter>
     </Provider>
   );
-}
+};
 
-export default App
+export default App;
